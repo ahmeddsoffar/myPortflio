@@ -1,9 +1,9 @@
-import Image from "next/image";
 import React from "react";
 import { projects } from "@/data/projects";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { ProjectPreview } from "@/components/project-preview";
 
 export function ProjectsSection(): React.ReactElement {
   return (
@@ -14,15 +14,11 @@ export function ProjectsSection(): React.ReactElement {
       <div className="mt-8 grid gap-6 sm:grid-cols-2">
         {projects.map((project) => (
           <Card key={project.title} className="overflow-hidden group">
-            <div className="aspect-video relative bg-foreground/5">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
+            <ProjectPreview
+              images={project.images}
+              fallback={project.image}
+              title={project.title}
+            />
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
             </CardHeader>
