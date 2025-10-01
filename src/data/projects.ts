@@ -28,12 +28,20 @@ export const projects: Project[] = [
     github: "https://github.com/ahmeddsoffar/node-with-graphQL",
   },
   {
-    title: "E-commerce Backend (laravel)",
+    title: "E-commerce Website (Laravel)",
     description:
-      "E-commerce Backend System – A Laravel-based backend that manages products, shopping carts, and orders with full CRUD functionality. Includes role-based access control for admins, staff, and customers, plus reporting tools for sales and inventory tracking.",
-    images: [""],
-    tech: ["Node.js", "NestJS", "PostgreSQL", "Stripe"],
-    github: "",
+      "A full-featured e-commerce platform built with Laravel, featuring product management, shopping cart functionality, user authentication, admin dashboard, and order management. Includes features like product categories, search, and a responsive design.",
+    images: [
+      "/images/projects/laravel ecommerce/1.PNG",
+      "/images/projects/laravel ecommerce/2.PNG",
+      "/images/projects/laravel ecommerce/3.PNG",
+      "/images/projects/laravel ecommerce/4.PNG",
+      "/images/projects/laravel ecommerce/6.PNG",
+      "/images/projects/laravel ecommerce/7.PNG",
+      "/images/projects/laravel ecommerce/8.PNG",
+    ],
+    tech: ["Laravel", "PHP", "MySQL", "Bootstrap", "jQuery"],
+    github: "https://github.com/ahmeddsoffar/laravel-ecommerce",
     demo: "",
   },
   {
