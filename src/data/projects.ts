@@ -4,6 +4,35 @@ import { Project } from "@/types/project";
 // Thumbnails should be ~1200x675 .webp for best quality/size balance
 export const projects: Project[] = [
   {
+    title: "Conference Timer - Event Management System",
+    description:
+      "A sophisticated full-stack event management platform in its final stages of development, designed to streamline conference organization and attendance tracking. This enterprise-grade solution features real-time QR code-based attendance tracking, multi-role authentication, and comprehensive analytics dashboards. The system empowers organizers with automated attendance reporting, intuitive event management tools, and a responsive modern interface built with industry-standard technologies. This project showcases practical implementation of microservices architecture, secure authentication flows, and modern UI/UX principles.",
+    images: [
+      "/images/projects/springboot conference app/1.PNG",
+      "/images/projects/springboot conference app/2.PNG",
+      "/images/projects/springboot conference app/3.PNG",
+      "/images/projects/springboot conference app/4.PNG",
+      "/images/projects/springboot conference app/5.PNG",
+      "/images/projects/springboot conference app/6.PNG",
+      "/images/projects/springboot conference app/7.PNG",
+      "/images/projects/springboot conference app/8.PNG",
+      "/images/projects/springboot conference app/9.PNG",
+    ],
+    tech: [
+      "Spring Boot 3",
+      "JWT Auth",
+      "PostgreSQL",
+      "JPA/Hibernate",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Docker",
+    ],
+    github: "",
+    demo: "",
+  },
+  {
     title: "Simple Chat App",
     description: "Real-time chat using WebSockets (Socket.io)",
     images: ["/images/projects/socket chat/1.PNG"],
